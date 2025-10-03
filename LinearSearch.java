@@ -29,11 +29,14 @@ public class LinearSearch{
     System.out.println("Now the values changed to index "+indexToFind+"("+numbers[indexToFind]+") and index "+(indexToFind+1)+"("+numbers[indexToFind+1]+")");
     
     // Task 3 - Sorting array in ascending and descending order.
+    
+    System.out.println("Array Before: "+Arrays.toString(numbers));
 
+    // Ascending order
+    
     int[] ascending = numbers;
-
-    System.out.println("Before sort: "+Arrays.toString(ascending));
-
+    
+    
     for(int j = 0; j < ascending.length; j++){
       if(ascending.length > (j+1) && ascending[j] > ascending[j+1]){
         reserve = ascending[j];
@@ -42,6 +45,20 @@ public class LinearSearch{
         j = 0;
       }
     }
-    System.out.println("After sort: "+Arrays.toString(ascending));
+    System.out.println("After Ascending: "+Arrays.toString(ascending));
+    
+    // Discending order
+    
+    int[] discending = numbers;
+
+    for(int j = 0; j < discending.length; j++){
+      if(discending.length > (j+1) && discending[j] < discending[j+1]){
+        reserve = discending[j];
+        discending[j] = discending[j+1];
+        discending[j+1] = reserve;
+        j = 0;
+      }
+    }
+    System.out.println("After Discending: "+Arrays.toString(discending));
   }
 }
