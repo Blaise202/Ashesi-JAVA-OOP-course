@@ -114,9 +114,5 @@ public class LinearSearch{
     }else{
       System.out.println(search + " was not found in the array.");
     }
-
-
-
-
   }
 } 
