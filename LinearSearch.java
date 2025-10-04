@@ -3,9 +3,9 @@ import java.util.Arrays;
 public class LinearSearch{
   public static void main(String[] args){
     int[] numbers = {2,5,8,3,4,6,10,15,20,1,11};
-
+    
     // Task 1 finding value of index provided by the user. 
-
+    
     Scanner scanner = new Scanner(System.in);
     int indexToFind, value = 0;
     int limit = numbers.length-1;
@@ -31,7 +31,7 @@ public class LinearSearch{
     // Task 3 - Sorting array in ascending and descending order.
     
     System.out.println("Array Before: "+Arrays.toString(numbers));
-
+    
     // Ascending order
     
     int[] ascending = numbers;
@@ -51,7 +51,7 @@ public class LinearSearch{
     // Discending order
     
     int[] descending = numbers;
-
+    
     for (int i = 0; i < descending.length - 1; i++) {
       for (int j = 0; j < descending.length - i - 1; j++) {
         if (descending[j] < descending[j + 1]) {
@@ -62,5 +62,29 @@ public class LinearSearch{
       }
     }
     System.out.println("After Discending: "+Arrays.toString(descending));
+
+    // Task 4 - linear search
+    
+    int[] newNumbers = {2,5,8,3,4,6,10,15,20,1,11};
+    System.out.println("Array Before Linear Search: "+Arrays.toString(newNumbers));
+    
+    System.out.print("Please enter the number are you searching for: ");
+    int search = scanner.nextInt();
+    boolean found = false;
+    int position = 0;
+    for(int i = 0; i < newNumbers.length; i++){
+      if(search == newNumbers[i]){
+        found = true;
+        position = i+1;
+        break;
+      }
+    }
+    if(found){
+      System.out.println(search + " was found and is on position "+position+".");
+    }else{
+      System.out.println(search + " was not found in the array.");
+    }
+
+
   }
 }
