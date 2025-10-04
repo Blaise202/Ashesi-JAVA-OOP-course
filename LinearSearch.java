@@ -84,7 +84,39 @@ public class LinearSearch{
     }else{
       System.out.println(search + " was not found in the array.");
     }
+    
+    // Task 5 - Binary search
+    Arrays.sort(newNumbers);
+    System.out.println("Array Before Binary Search: "+Arrays.toString(newNumbers));
+
+    System.out.print("Please enter the number are you searching for: ");
+    search = scanner.nextInt();
+    found = false;
+    int lowest = 0;
+    int highest = newNumbers.length - 1;
+    found = false;
+    position = 0;
+    
+    while(lowest <= highest){
+      int middle = (highest+lowest)/2;
+      if(search == newNumbers[middle]){
+        position = middle + 1;
+        found = true;
+        break;
+      }else if(search < newNumbers[middle]){
+        highest = middle - 1;
+      }else{
+        lowest = middle + 1;
+      }
+    }
+    if(found){
+      System.out.println(search + " was found and is on position "+position+".");
+    }else{
+      System.out.println(search + " was not found in the array.");
+    }
+
+
 
 
   }
-}
+} 
