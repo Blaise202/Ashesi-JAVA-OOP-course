@@ -37,28 +37,30 @@ public class LinearSearch{
     int[] ascending = numbers;
     
     
-    for(int j = 0; j < ascending.length; j++){
-      if(ascending.length > (j+1) && ascending[j] > ascending[j+1]){
-        reserve = ascending[j];
-        ascending[j] = ascending[j+1];
-        ascending[j+1] = reserve;
-        j = 0;
+    for (int i = 0; i < ascending.length - 1; i++) {
+      for (int j = 0; j < ascending.length - i - 1; j++) {
+        if (ascending[j] > ascending[j + 1]) {
+          int temp = ascending[j];
+          ascending[j] = ascending[j + 1];
+          ascending[j + 1] = temp;
+        }
       }
     }
     System.out.println("After Ascending: "+Arrays.toString(ascending));
     
     // Discending order
     
-    int[] discending = numbers;
+    int[] descending = numbers;
 
-    for(int j = 0; j < discending.length; j++){
-      if(discending.length > (j+1) && discending[j] < discending[j+1]){
-        reserve = discending[j];
-        discending[j] = discending[j+1];
-        discending[j+1] = reserve;
-        j = 0;
+    for (int i = 0; i < descending.length - 1; i++) {
+      for (int j = 0; j < descending.length - i - 1; j++) {
+        if (descending[j] < descending[j + 1]) {
+          int temp = descending[j];
+          descending[j] = descending[j + 1];
+          descending[j + 1] = temp;
+        }
       }
     }
-    System.out.println("After Discending: "+Arrays.toString(discending));
+    System.out.println("After Discending: "+Arrays.toString(descending));
   }
 }
