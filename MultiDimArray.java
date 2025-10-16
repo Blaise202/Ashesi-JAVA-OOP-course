@@ -41,7 +41,8 @@ public class MultiDimArray{
     for(int[][] twoDim : threeDim){
       for(int[] oneDim : twoDim){
         for(int num : oneDim){
-          System.out.print("");
+          System.out.print(num+" ");
+          
         }
       }
     }
