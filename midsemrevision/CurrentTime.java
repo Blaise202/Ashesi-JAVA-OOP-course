@@ -17,9 +17,9 @@ public class CurrentTime {
 
     long totalHours = totalMinutes / 60;
     long remainingMinutes = totalMinutes % 60;
-    
+
     long currentHourGmt = totalHours % 24;
-    
+
 
     long currentLocalHour = (currentHourGmt + offset) % 24;
     if(currentLocalHour < 0){
