@@ -17,5 +17,6 @@ public class AverageWithInput{
     average = sum/2;
     System.out.println("");
     System.out.println("Average: "+average);
+    scanner.close();
   }
 }

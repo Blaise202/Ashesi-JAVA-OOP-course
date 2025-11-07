@@ -10,7 +10,6 @@ public class CurrentTime {
     long totalMilliseconds = System.currentTimeMillis();
 
     long totalSeconds = totalMilliseconds / 1000;
-    long remainingMillSeconds = totalMilliseconds % 1000;
 
     long totalMinutes = totalSeconds / 60;
     long remainingSeconds = totalSeconds % 60;

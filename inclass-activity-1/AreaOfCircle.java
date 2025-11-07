@@ -7,5 +7,6 @@ public class AreaOfCircle{
     radius = scanner.nextInt();
     area = Math.PI * Math.pow(radius, 2);
     System.out.print("The area of the circle is: " + Math.round(area));
+    scanner.close();
   }
 }

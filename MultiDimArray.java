@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class MultiDimArray{
 
   public String name = "Blaise";

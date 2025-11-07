@@ -12,5 +12,6 @@ public class NewtonsDistance{
     double distance = (velocity*time) + (acceleration*(time*time))/2;
 
     System.out.print("The distance is "+ distance);
+    sc.close();
   }
 }

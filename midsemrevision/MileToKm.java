@@ -6,5 +6,6 @@ public class MileToKm{
     double miles = sc.nextDouble();
     double kilometers = miles * 1.6;
     System.out.print(miles+" miles is "+kilometers+" kilometers.");
+    sc.close();
   }
 }

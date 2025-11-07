@@ -6,5 +6,6 @@ public class MeterToFeet{
     double meters = scanner.nextDouble();
     double feets = meters * 3.2786;
     System.out.print(meters+" meters is "+feets+" feets.");
+    scanner.close();
   }
 }

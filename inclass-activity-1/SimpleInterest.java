@@ -11,5 +11,6 @@ public class SimpleInterest{
     time = scanner.nextInt();
     interest = amount * rate * time / 100;
     System.out.print("The simple interest after "+time+" years is "+interest);
+    scanner.close();
   }
 }

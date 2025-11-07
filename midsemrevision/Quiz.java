@@ -11,5 +11,6 @@ public class Quiz{
     }else{
       System.out.println("😢Wrong!");
     }
+    scanner.close();
   }
 }

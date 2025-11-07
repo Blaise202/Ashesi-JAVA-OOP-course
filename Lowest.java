@@ -40,6 +40,7 @@ public class Lowest{
     }else{
       System.out.println(find + " was not found in the array.");
     }
+    scanner.close();
   }
 }
 
