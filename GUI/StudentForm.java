@@ -33,6 +33,15 @@ public class StudentForm extends JFrame implements ActionListener {
         nameField = new JTextField(15);
         add(nameField);
 
+        JFrame frame = new JFrame("Line Break Example");
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300, 200);
+        frame.setLayout(new FlowLayout());
+
+        JLabel label = new JLabel("<html>This is the first line.<br>This is the second line.<br>And this is the third line.</html>");
+        frame.add(label);
+
         add(new JLabel("Age:"));
         ageField = new JTextField(5);
         add(ageField);
