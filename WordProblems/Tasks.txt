@@ -1,0 +1,64 @@
+Task 1
+The Ashesi Transportation Fleet Tracker
+Scenario
+Ashesi is rolling out an internal fleet-tracking system for campus shuttles, security patrol pickups, and maintenance vans.
+Your team must design the first phase of the system using inheritance properly.
+All vehicles share:
+•	a unique ID
+•	a driver name
+•	a current speed (km/h)
+•	the ability to accelerate and brake
+Specific vehicles have special behavior:
+Bus
+•	capacity (number of students)
+•	Shuttle accelerates slower than normal vehicles
+•	Shuttle braking prints a custom message using super.brake() inside it
+Security Patrol Pickup
+•	has sirens (boolean)
+•	When accelerating, if sirens are ON, it accelerates faster
+•	Should override accelerate() and call super.accelerate() appropriately
+Maintenance Van
+•	stores equipment weight in kg
+•	If equipment weight > 200kg, acceleration is reduced
+•	Must override accelerate() and use super.accelerate() to calculate base speed first
+You must also design a fleet manager class that can store and print all vehicles. The base class and subclasses have been started for you.
+ 
+
+
+Task 2
+Ashesi Smart Campus Sensor Network
+Scenario / Word Problem
+Ashesi is deploying a smart sensor network across campus to track activity, utilities, and environmental conditions.
+Different sensors share common capabilities but behave differently.
+You must use interfaces only, no inheritance.
+All sensors must implement:
+Interface: Sensor
+Variables (constants):
+•	int DEFAULT_READING = 0;
+•	String CAMPUS_NAME = "Ashesi University";
+Methods:
+•	int readValue()
+•	String getLocation()
+•	Default method isCritical() returns false
+•	Default method summary() prints the reading and location
+Specific capability interfaces:
+HasBattery
+•	int getBatteryLevel()
+•	default method needsCharging() returns battery < 20
+Wireless
+•	String getSignalStrength()
+Concrete Sensors
+TemperatureSensor (implements Sensor, Wireless)
+•	reading in Celsius
+•	location (e.g., "NSE Lab 2")
+•	has wireless signal strength
+•	reading is critical if above 35°C
+WaterFlowSensor (implements Sensor)
+•	reading is liters/min
+•	reading is critical if < 3
+ SecurityCameraSensor (implements Sensor, HasBattery, Wireless)
+•	reading indicates motion detections/min
+•	has battery level
+•	has wireless signal strength
+•	critical if battery < 10 OR motion > 20
+You must also create a driver program for this. Some starter code has been provided for you.
