@@ -69,4 +69,10 @@ The keyword **super** refers to the superclass and can be used to invoke supercl
 ### It can be used in two ways:
 
     1. To call a superclass constructor
-    2. To reference the superclass accessible members
+    2. To reference the superclass accessible members (either methods or variable)
+
+## 7. Static Variables & Methods
+
+**A static variable** is a variable that belongs to the class itself rather than a specific object of that class. _All Oblects of this class share a single copy of this variable._
+
+**A static method** is a method that belongs to the class itself rather than a specific object of that class. _This means you can call the method directly using the class name, without needing to create an object first._
