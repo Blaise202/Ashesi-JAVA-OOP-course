@@ -1,6 +1,6 @@
 # Concepts to cover
 
-## 1. Ingeritance
+## 1. Inheritance
 
 **Inheritance** is a mecanism where one class acquires properties and behaviors of another class, astablishing a parent-child or "is-a" relationship.
 
