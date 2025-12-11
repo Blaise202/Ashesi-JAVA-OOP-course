@@ -22,3 +22,8 @@ _or_
 
     1. Accessor methods (getters): allow the programmer to obtain the value of the object's instance variable
     2. Mutator methods (setters): allow the programmer to change the value of the object's instance variable
+
+## 3. Interfaces
+
+**An interface** is a class like consruct for defining common operations for objects
+_A class implements an interface by providing code for each method declared by the interface._
