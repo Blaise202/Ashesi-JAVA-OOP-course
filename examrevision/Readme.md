@@ -26,4 +26,12 @@ _or_
 ## 3. Interfaces
 
 **An interface** is a class like consruct for defining common operations for objects
+
 _A class implements an interface by providing code for each method declared by the interface._
+
+### Rules of interfaces:
+
+    1. All methods are automatically public abstract
+    2. Variables inside interfaces are public static final
+    3. Interfaces cannot have constructors
+    4. One class can implement multiple interfaces
