@@ -36,8 +36,28 @@ _A class implements an interface by providing code for each method declared by t
     3. Interfaces cannot have constructors
     4. One class can implement multiple interfaces
 
-# 4. Methods Overloading VS Overriding
+## 4. Methods Overloading VS Overriding
 
 **Methods Overloading** means defining methods of the same name but different paramenter list or return type
 
 **Method Overriding** is when a subclass provides its own implementation for a method that is already in its superclass / To provide an new implementation for a method in the subclass
+
+## 5. Constructors
+
+**A constructor** is a special method used for initialising objects. When an object is created, a constructor is created
+
+### types of constructors
+
+1. Default Constructor: _If you do not explicitly define any constructor in your class, the Java compiler automatically provides a default, no-argument constructor during compilation. This constructor initializes all instance variables with default values (e.g., 0 for integers, false for booleans, null for objects)._
+
+2. No-Arg Constructor (User-Defined): _This is a constructor explicitly written by the programmer that takes no arguments. It allows the programmer to define custom initialization logic, which the default compiler-generated one does not._
+
+3. Parametarized constructor: _This type of constructor accepts one or more parameters. It is used to initialize an object with specific, user-defined values passed during object creation._
+
+4. Copy Constructor: _Java allows creating a constructor that takes an object of the same class as an argument to create a new object with the same values (a copy)_
+
+### Rules of building constructors
+
+    1. Constructor has the same name as the class
+    2. It has no return type
+    3. It is called automatically on object creation
