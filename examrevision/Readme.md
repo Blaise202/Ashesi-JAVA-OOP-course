@@ -35,3 +35,9 @@ _A class implements an interface by providing code for each method declared by t
     2. Variables inside interfaces are public static final
     3. Interfaces cannot have constructors
     4. One class can implement multiple interfaces
+
+# 4. Methods Overloading VS Overriding
+
+**Methods Overloading** means defining methods of the same name but different paramenter list or return type
+
+**Method Overriding** is when a subclass provides its own implementation for a method that is already in its superclass / To provide an new implementation for a method in the subclass
