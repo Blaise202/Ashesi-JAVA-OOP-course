@@ -1,0 +1,24 @@
+# Concepts to cover
+
+## 1. Ingeritance
+
+**Inheritance** is a mecanism where one class acquires properties and behaviors of another class, astablishing a parent-child or "is-a" relationship.
+
+### importance of inheritance
+
+    1. Promotes data reusability
+    2. Improves Maintainability
+    3. Supports polymorthism
+
+## 2. Polymorphism
+
+**Polymorphism** is the ability of an object to take on many forms, allowing a single action or method name to be performed in different ways depending on the object's type or the context of the call.
+
+_or_
+
+**Polymorphism** is the ability to associate many meanings to one method name.
+
+**Incapsulation** means the data and methods are combined in a single unit, (i.e a class object) which hides the implementation details.
+
+    1. Accessor methods (getters): allow the programmer to obtain the value of the object's instance variable
+    2. Mutator methods (setters): allow the programmer to change the value of the object's instance variable
