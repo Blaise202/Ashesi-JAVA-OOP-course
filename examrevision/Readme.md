@@ -61,3 +61,12 @@ _A class implements an interface by providing code for each method declared by t
     1. Constructor has the same name as the class
     2. It has no return type
     3. It is called automatically on object creation
+
+## 6. The super keyword
+
+The keyword **super** refers to the superclass and can be used to invoke superclass's methods and constructors
+
+### It can be used in two ways:
+
+    1. To call a superclass constructor
+    2. To reference the superclass accessible members
