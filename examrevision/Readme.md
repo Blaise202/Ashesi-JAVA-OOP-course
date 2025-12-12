@@ -76,3 +76,7 @@ The keyword **super** refers to the superclass and can be used to invoke supercl
 **A static variable** is a variable that belongs to the class itself rather than a specific object of that class. _All Oblects of this class share a single copy of this variable._
 
 **A static method** is a method that belongs to the class itself rather than a specific object of that class. _This means you can call the method directly using the class name, without needing to create an object first._
+
+## 8. Abstraction
+
+**Abstraction** is a core principle of Object-Oriented Programming (OOP) used to hide complex implementation details and show only the necessary features or functionality to the user
